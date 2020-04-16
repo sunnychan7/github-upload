@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+#layout{
+    display: grid;
+    grid: 
+        "header photo" 150px
+        "main main" 330px
+        "footer footer" 100px
+        / 1fr 300px;
+}
+body {
+    background-color: #94F0FF;
+    margin: 0;
+    padding-left: 1em;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    grid-area: 1 / 1 / 2 / -1;
+    font-family: 'Times New Roman', Times, serif
+}
+main{
+    grid-area: 2 / 1 / 3 / -1;
+}
+#exp, #extra{
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer{
+    grid-area: 3 / 1 / -1 / -1; 
+}
+
+h1{
+    font-size: 3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2{
+    padding: 0;
+    margin: 0;
+}  
+h3{
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+}       
+/*misc*/
+#rx{
+    padding-top: 1em;
+    grid-area: photo;
+    width: 8em;
+    height: 8em;
+    justify-self: end;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
